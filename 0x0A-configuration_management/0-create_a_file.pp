@@ -1,8 +1,6 @@
-# Creates a file in /tmp
-
-file { '/tmp/school':
-  ensure  => file,
-  path    => '/tmp/school',
+# create a file
+file { '/tmp/holberton':
+  ensure  => 'present',
   mode    => '0744',
   owner   => 'www-data',
   group   => 'www-data',
